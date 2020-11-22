@@ -5,6 +5,7 @@ It provides a couple of webservices:
 2. CreateOrders
 3. getOrderById
 4. getOrderByOrderNo
+5. getAllOrders
 Users can use embedded SwaggerUI to get details about the API end points and json input format.
 ### Project assumption
    1. all the orders should be placed by valid customer, order webservices will not create customer related information during order capturing.
@@ -22,6 +23,8 @@ Users can use embedded SwaggerUI to get details about the API end points and jso
    install Maven client
 ###  Testing
    Fuctional testing is Mokito based and for automation is Junit based..
-##
+
+### Regarding about the project
+   It is a very fun topic to work on. It can be used as an intermediate layer between the site order taken and backend order processing (such as OMS). The webservice can actually read json from Kafka topic and then does all the data validation before pushing it to the backend order processing layer.
    
    
