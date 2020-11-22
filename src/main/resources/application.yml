@@ -1,0 +1,8 @@
+spring:
+  data:
+    mongodb:
+      database: OrderManagement
+      uri: mongodb://localhost:27017
+logging:
+  level:
+    org.springframework.data.mongodb.core.ReactiveMongoTemplate: DEBUG
